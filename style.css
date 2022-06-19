@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+header {
+    background-image: url('./images/bg-hero-desktop.svg');
+    background-color: hsl(193, 100%, 96%);
+    padding: 50px;
+}
+
+.header-button {
+    background: #FFF;
+    padding: 12px 50px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 10px hsl(180, 2%, 23%);
+}
+
+.header-button > a {
+    text-decoration: none;
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+}
+
+.header-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-text {
+    width: 35rem;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: calc(50vh - 250px);
+}
+
+.header-text > h1 {
+    color: hsl(192, 100%, 9%);
+    width: 400px;
+}
+
+.header-text > p {
+    color: hsl(208, 11%, 55%);
+}
+
+.header-text button {
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    color: #FFF;
+    width: 60%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.header-img {
+    width: 60%;
+}
+
+.header-img img {
+    width: 85%;
+    margin-left: 8rem;
+    margin-right: auto;
+    margin-top: 10%;
+    padding-left: 30px;
+}
+
+main {
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: calc(50vw - (80vw / 2));
+    margin-top: 6vh;
+    box-shadow: 0 4px 8px #0b0b0b0a, 0 8px 20px #39393913;
+    padding: 2em;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+    padding: 2.8em;
+}
+
+.card-item-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 35vh;
+}
+
+.card:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.card:nth-of-type(even) > .card-item-img {
+    flex-direction: row-reverse;
+}
+
+.card-item > h1 {
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 0.5em;
+}
+
+.card-item > p {
+    color: hsl(208, 11%, 55%);
+    font-weight: 400;
+    line-height: 2em;
+}
+
+@media (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        margin-left: calc(50vw - (75vw / 2));
+        margin-top: 6vh;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0#1817170a, 0 8px 20px 0 #25252513;
+    }
+
+    .card .card-item {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .card {
+        margin-top: 20vh;
+        flex-direction: column-reverse;
+    }
+}
+
+footer {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 15%;
+    background: hsl(192, 100%, 9%);
+    width: 100%;
+    padding: 10rem;
+}
+
+.floating-div  {
+    box-sizing: border-box;
+    background: #FFF;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 5rem;
+    position: absolute;
+    top: -30%;
+    left: 25%;
+    transform: translate(-50, -50);
+    border-radius: 15px;
+    box-shadow: 0 5px 5px #000;
+}
+
+.floating-div > button {
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    color: #FFF;
+    width: 60%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    justify-content: space-between;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: hsl(193, 100%, 96%);
+    margin-right: 1em;
+}
+
+.footer-item > a {
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+    margin-bottom: 1em;
+}
+
+.footer-item > div {
+    margin-bottom: 1em;
+}
+
+.footer-logo {
+    width: 10%;
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(70deg) brightness(108%) contrast(108%);
+    margin-bottom: 1em;
+}
+
+.copyright {
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 2.5em;
+    color: hsl(193, 100%, 96%);
+    font-size: 12px;
+}
